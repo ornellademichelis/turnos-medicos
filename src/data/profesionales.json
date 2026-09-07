@@ -1,0 +1,182 @@
+[
+{
+    "medicoId": "m1a2b3c4-0001-4000-8000-000000000001",
+    "nombre": "Dr. Carlos Gómez",
+    "especialidad": "Cardiología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0002-4000-8000-000000000002",
+    "nombre": "Dra. María Rodríguez",
+    "especialidad": "Dermatología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0003-4000-8000-000000000003",
+    "nombre": "Dr. Juan Fernández",
+    "especialidad": "Pediatría",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0004-4000-8000-000000000004",
+    "nombre": "Dra. Laura Martínez",
+    "especialidad": "Neurología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0005-4000-8000-000000000005",
+    "nombre": "Dr. Roberto López",
+    "especialidad": "Ginecología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0006-4000-8000-000000000006",
+    "nombre": "Dra. Patricia Sánchez",
+    "especialidad": "Oftalmología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0007-4000-8000-000000000007",
+    "nombre": "Dr. Diego Pérez",
+    "especialidad": "Traumatología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0008-4000-8000-000000000008",
+    "nombre": "Dra. Ana González",
+    "especialidad": "Psiquiatría",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0009-4000-8000-000000000009",
+    "nombre": "Dr. Fernando Romero",
+    "especialidad": "Endocrinología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0010-4000-8000-000000000010",
+    "nombre": "Dra. Sofia Torres",
+    "especialidad": "Gastroenterología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0011-4000-8000-000000000011",
+    "nombre": "Dr. Miguel Díaz",
+    "especialidad": "Neumonología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0012-4000-8000-000000000012",
+    "nombre": "Dra. Claudia Álvarez",
+    "especialidad": "Otorrinolaringología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0013-4000-8000-000000000013",
+    "nombre": "Dr. Jorge Ruiz",
+    "especialidad": "Urología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0014-4000-8000-000000000014",
+    "nombre": "Dra. Elena Benítez",
+    "especialidad": "Nefrología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0015-4000-8000-000000000015",
+    "nombre": "Dr. Gabriel Morales",
+    "especialidad": "Reumatología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0016-4000-8000-000000000016",
+    "nombre": "Dra. Lucía Acosta",
+    "especialidad": "Oncología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0017-4000-8000-000000000017",
+    "nombre": "Dr. Andrés Medina",
+    "especialidad": "Infectología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0018-4000-8000-000000000018",
+    "nombre": "Dra. Mariana Castro",
+    "especialidad": "Nutrición",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0019-4000-8000-000000000019",
+    "nombre": "Dr. Esteban Silva",
+    "especialidad": "Hematología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0020-4000-8000-000000000020",
+    "nombre": "Dra. Verónica Rojas",
+    "especialidad": "Alergología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0021-4000-8000-000000000021",
+    "nombre": "Dr. Javier Navarro",
+    "especialidad": "Cardiología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0022-4000-8000-000000000022",
+    "nombre": "Dra. Natalia Molina",
+    "especialidad": "Pediatría",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0023-4000-8000-000000000023",
+    "nombre": "Dr. Hugo Ortiz",
+    "especialidad": "Traumatología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0024-4000-8000-000000000024",
+    "nombre": "Dra. Camila Blanco",
+    "especialidad": "Ginecología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0025-4000-8000-000000000025",
+    "nombre": "Dr. Ricardo Ramos",
+    "especialidad": "Dermatología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0026-4000-8000-000000000026",
+    "nombre": "Dra. Isabel Herrera",
+    "especialidad": "Gastroenterología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0027-4000-8000-000000000027",
+    "nombre": "Dr. Gonzalo Domínguez",
+    "especialidad": "Oftalmología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0028-4000-8000-000000000028",
+    "nombre": "Dra. Paula Flores",
+    "especialidad": "Psiquiatría",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0029-4000-8000-000000000029",
+    "nombre": "Dr. Martin Suárez",
+    "especialidad": "Endocrinología",
+    "activo": true
+},
+{
+    "medicoId": "m1a2b3c4-0030-4000-8000-000000000030",
+    "nombre": "Dra. Daniela Gil",
+    "especialidad": "Nutrición",
+    "activo": true
+}
+]
