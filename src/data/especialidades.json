@@ -50,7 +50,7 @@
     "activa": true
 },
 {
-    "especialidad": "11",
+    "especialidadId": "11",
     "nombreEspecialidad": "Neumonología",
     "activa": true
 },
