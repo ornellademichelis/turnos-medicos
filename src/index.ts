@@ -15,6 +15,8 @@ app.use(Express.json())
 // GET especialidades -- Obtener el listado completo
 app.get('/especialidades', (req: Request, res: Response) => {
     try {
+        console.clear()
+        console.table(arrayEspecialidades)
         res.status(200)
             .json(arrayEspecialidades)
     } catch (error) {
@@ -80,6 +82,8 @@ app.delete('/especialidades/:id', (req: Request, res: Response) => {
         if (indice > -1) {
             arrayEspecialidades[indice].activa = false
 
+            console.clear()
+            console.table(arrayEspecialidades[indice])
             res.status(204)
                 .json({})
         } else {
@@ -161,6 +165,8 @@ app.put('/profesionales/:id', (req: Request, res: Response) => {
             arrayProfesionales[indice].especialidad = especialidad
             arrayProfesionales[indice].activo = Boolean(activo)
 
+            console.clear()
+            console.table(arrayProfesionales[indice])
             res.status(200)
                 .json(arrayProfesionales[indice])
 

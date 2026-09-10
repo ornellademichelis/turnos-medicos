@@ -1,101 +1,101 @@
 [
 {
-    "especialidadId": "1",
+    "especialidadId": 1,
     "nombreEspecialidad": "Cardiología",
     "activa": true
 },
 {
-    "especialidadId": "2",
+    "especialidadId": 2,
     "nombreEspecialidad": "Dermatología",
     "activa": true
 },
 {
-    "especialidadId": "3",
+    "especialidadId": 3,
     "nombreEspecialidad": "Pediatría",
     "activa": true
 },
 {
-    "especialidadId": "4",
+    "especialidadId": 4,
     "nombreEspecialidad": "Neurología",
     "activa": true
 },
 {
-    "especialidadId": "5",
+    "especialidadId": 5,
     "nombreEspecialidad": "Ginecología",
     "activa": true
 },
 {
-    "especialidadId": "6",
+    "especialidadId": 6,
     "nombreEspecialidad": "Oftalmología",
     "activa": true
 },
 {
-    "especialidadId": "7",
+    "especialidadId": 7,
     "nombreEspecialidad": "Traumatología",
     "activa": true
 },
 {
-    "especialidadId": "8",
+    "especialidadId": 8,
     "nombreEspecialidad": "Psiquiatría",
     "activa": true
 },
 {
-    "especialidadId": "9",
+    "especialidadId": 9,
     "nombreEspecialidad": "Endocrinología",
     "activa": true
 },
 {
-    "especialidadId": "10",
+    "especialidadId": 10,
     "nombreEspecialidad": "Gastroenterología",
     "activa": true
 },
 {
-    "especialidadId": "11",
+    "especialidadId": 11,
     "nombreEspecialidad": "Neumonología",
     "activa": true
 },
 {
-    "especialidadId": "12",
+    "especialidadId": 12,
     "nombreEspecialidad": "Otorrinolaringología",
     "activa": true
 },
 {
-    "especialidadId": "13",
+    "especialidadId": 13,
     "nombreEspecialidad": "Urología",
     "activa": true
 },
 {
-    "especialidadId": "14",
+    "especialidadId": 14,
     "nombreEspecialidad": "Nefrología",
     "activa": true
 },
 {
-    "especialidadId": "15",
+    "especialidadId": 15,
     "nombreEspecialidad": "Reumatología",
     "activa": true
 },
 {
-    "especialidadId": "16",
+    "especialidadId": 16,
     "nombreEspecialidad": "Oncología",
     "activa": true
 },
 {
-    "especialidadId": "17",
+    "especialidadId": 17,
     "nombreEspecialidad": "Infectología",
     "activa": true
 },
 {
-    "especialidadId": "18",
+    "especialidadId": 18,
     "nombreEspecialidad": "Nutrición",
     "activa": true
 },
 {
-    "especialidadId": "19",
+    "especialidadId": 19,
     "nombreEspecialidad": "Hematología",
     "activa": true
 },
 {
-    "especialidadId": "20",
+    "especialidadId": 20,
     "nombreEspecialidad": "Alergología",
     "activa": true
 }
