@@ -1,180 +1,180 @@
 [
 {
-    "profesionalId": "1",
+    "profesionalId": 1,
     "nombre": "Dr. Carlos Gómez",
     "especialidad": "Cardiología",
     "activo": true
 },
 {
-    "profesionalId": "2",
+    "profesionalId": 2,
     "nombre": "Dra. María Rodríguez",
     "especialidad": "Dermatología",
     "activo": true
 },
 {
-    "profesionalId": "3",
+    "profesionalId": 3,
     "nombre": "Dr. Juan Fernández",
     "especialidad": "Pediatría",
     "activo": true
 },
 {
-    "profesionalId": "4",
+    "profesionalId": 4,
     "nombre": "Dra. Laura Martínez",
     "especialidad": "Neurología",
     "activo": true
 },
 {
-    "profesionalId": "5",
+    "profesionalId": 5,
     "nombre": "Dr. Roberto López",
     "especialidad": "Ginecología",
     "activo": true
 },
 {
-    "profesionalId": "6",
+    "profesionalId": 6,
     "nombre": "Dra. Patricia Sánchez",
     "especialidad": "Oftalmología",
     "activo": true
 },
 {
-    "profesionalId": "7",
+    "profesionalId": 7,
     "nombre": "Dr. Diego Pérez",
     "especialidad": "Traumatología",
     "activo": true
 },
 {
-    "profesionalId": "8",
+    "profesionalId": 8,
     "nombre": "Dra. Ana González",
     "especialidad": "Psiquiatría",
     "activo": true
 },
 {
-    "profesionalId": "9",
+    "profesionalId": 9,
     "nombre": "Dr. Fernando Romero",
     "especialidad": "Endocrinología",
     "activo": true
 },
 {
-    "profesionalId": "10",
+    "profesionalId": 10,
     "nombre": "Dra. Sofia Torres",
     "especialidad": "Gastroenterología",
     "activo": true
 },
 {
-    "profesionalId": "11",
+    "profesionalId": 11,
     "nombre": "Dr. Miguel Díaz",
     "especialidad": "Neumonología",
     "activo": true
 },
 {
-    "profesionalId": "12",
+    "profesionalId": 12,
     "nombre": "Dra. Claudia Álvarez",
     "especialidad": "Otorrinolaringología",
     "activo": true
 },
 {
-    "profesionalId": "13",
+    "profesionalId": 13,
     "nombre": "Dr. Jorge Ruiz",
     "especialidad": "Urología",
     "activo": true
 },
 {
-    "profesionalId": "14",
+    "profesionalId": 14,
     "nombre": "Dra. Elena Benítez",
     "especialidad": "Nefrología",
     "activo": true
 },
 {
-    "profesionalId": "15",
+    "profesionalId": 15,
     "nombre": "Dr. Gabriel Morales",
     "especialidad": "Reumatología",
     "activo": true
 },
 {
-    "profesionalId": "16",
+    "profesionalId": 16,
     "nombre": "Dra. Lucía Acosta",
     "especialidad": "Oncología",
     "activo": true
 },
 {
-    "profesionalId": "17",
+    "profesionalId": 17,
     "nombre": "Dr. Andrés Medina",
     "especialidad": "Infectología",
     "activo": true
 },
 {
-    "profesionalId": "18",
+    "profesionalId": 18,
     "nombre": "Dra. Mariana Castro",
     "especialidad": "Nutrición",
     "activo": true
 },
 {
-    "profesionalId": "19",
+    "profesionalId": 19,
     "nombre": "Dr. Esteban Silva",
     "especialidad": "Hematología",
     "activo": true
 },
 {
-    "profesionalId": "20",
+    "profesionalId": 20,
     "nombre": "Dra. Verónica Rojas",
     "especialidad": "Alergología",
     "activo": true
 },
 {
-    "profesionalId": "21",
+    "profesionalId": 21,
     "nombre": "Dr. Javier Navarro",
     "especialidad": "Cardiología",
     "activo": true
 },
 {
-    "profesionalId": "22",
+    "profesionalId": 22,
     "nombre": "Dra. Natalia Molina",
     "especialidad": "Pediatría",
     "activo": true
 },
 {
-    "profesionalId": "23",
+    "profesionalId": 23,
     "nombre": "Dr. Hugo Ortiz",
     "especialidad": "Traumatología",
     "activo": true
 },
 {
-    "profesionalId": "24",
+    "profesionalId": 24,
     "nombre": "Dra. Camila Blanco",
     "especialidad": "Ginecología",
     "activo": true
 },
 {
-    "profesionalId": "25",
+    "profesionalId": 25,
     "nombre": "Dr. Ricardo Ramos",
     "especialidad": "Dermatología",
     "activo": true
 },
 {
-    "profesionalId": "26",
+    "profesionalId": 26,
     "nombre": "Dra. Isabel Herrera",
     "especialidad": "Gastroenterología",
     "activo": true
 },
 {
-    "profesionalId": "27",
+    "profesionalId": 27,
     "nombre": "Dr. Gonzalo Domínguez",
     "especialidad": "Oftalmología",
     "activo": true
 },
 {
-    "profesionalId": "28",
+    "profesionalId": 28,
     "nombre": "Dra. Paula Flores",
     "especialidad": "Psiquiatría",
     "activo": true
 },
 {
-    "profesionalId": "29",
+    "profesionalId": 29,
     "nombre": "Dr. Martin Suárez",
     "especialidad": "Endocrinología",
     "activo": true
 },
 {
-    "profesionalId": "30",
+    "profesionalId": 30,
     "nombre": "Dra. Daniela Gil",
     "especialidad": "Nutrición",
     "activo": true

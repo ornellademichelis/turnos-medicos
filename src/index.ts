@@ -54,7 +54,7 @@ app.post('/especialidades', (req: Request, res: Response) => {
         const {nombreEspecialidad, activa} = req.body
 
         const nuevaEspecialidad: Especialidad = {
-            especialidadId: arrayEspecialidades.lenght + 1,
+            especialidadId: arrayEspecialidades.length + 1,
             nombreEspecialidad: nombreEspecialidad,
             activa: Boolean(activa)
         }
@@ -82,6 +82,8 @@ app.delete('/especialidades/:id', (req: Request, res: Response) => {
 
             res.status(204)
                 .json({})
+        } else {
+            res.status(404).json({ error: 'Especialidad no encontrada' });
         }
 
     } catch (error) {
@@ -130,7 +132,7 @@ app.post('/profesionales', (req: Request, res: Response) => {
         const { nombre, especialidad, activo} = req.body
         
         const nuevoProfesional: Profesional ={
-            profesionalId: arrayProfesionales.lenght + 1,
+            profesionalId: arrayProfesionales.length + 1,
             nombre: nombre,
             especialidad: especialidad,
             activo: Boolean(activo)
@@ -150,7 +152,7 @@ app.post('/profesionales', (req: Request, res: Response) => {
 // PUT profesionales id -- Modificación completa de un profesional
 app.put('/profesionales/:id', (req: Request, res: Response) => {
     try {
-        const profesionalId = req.params.profesionalId
+        const profesionalId = req.params.id
         const { nombre, especialidad, activo } = req.body
         
         const indice = arrayProfesionales.findIndex((prof: any)=> prof.profesionalId === Number(profesionalId))
@@ -175,7 +177,7 @@ app.put('/profesionales/:id', (req: Request, res: Response) => {
 // DELETE /profesionales id -- Borrado lógico (activo: false)
 app.delete('/profesionales/:id', (req: Request, res: Response) => {
     try {
-        const profesionalId = req.params.profesionalId
+        const profesionalId = req.params.id
         const indice = arrayProfesionales.findIndex((prof: any)=> prof.profesionalId === Number(profesionalId))
 
         if (indice > -1){
