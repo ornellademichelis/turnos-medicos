@@ -1,9 +1,8 @@
-import { array } from "node:stream/iter";
 import { configuracionAgenda, arrayProfesionales, arrayEspecialidades} from "./resources.ts";
 import type { Especialidad, Profesional} from "./resources.ts";
 
 import Express, {type Response, type Request} from "express"
-import { json } from "node:stream/consumers";
+
 const PORT = process.env.PORT || 3000
 const app = Express()
 
@@ -203,4 +202,8 @@ app.use((req: Request, res: Response)=> {
     } catch (error){
         res.status(500).json({error: 'Error interno del servidor'});
     }
+});
+
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en puerto ${PORT}`)
 });
