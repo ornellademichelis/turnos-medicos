@@ -48,7 +48,7 @@ export class EspecialidadesController{
         try {
             const {nombreEspecialidad, activa} = req.body
     
-            if(!nombreEspecialidad || !activa){
+            if(!nombreEspecialidad || activa === undefined || activa === null){
                 throw new Error('Verifica los datos enviados para la nueva especialidad.')
             }
             

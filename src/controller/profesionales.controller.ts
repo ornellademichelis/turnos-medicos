@@ -38,7 +38,7 @@ static findById = async (req: Request, res: Response) => {
         }
 
         return res.status(this.statusCode)
-            .json(arrayProfesionales)
+            .json(profesionalSeleccionado)
 
     } catch (error: any) {
         return res.status(this.statusCode)
@@ -51,7 +51,7 @@ static create = async (req: Request, res: Response) => {
     try {
         const { nombre, especialidad, activo} = req.body
 
-        if(!nombre || !especialidad || !activo){
+        if(!nombre || !especialidad || activo === undefined || activo === null){
             this.statusCode = 400
             throw new Error('Verifica los datos del nuevo profesional a crear.')
         }
@@ -86,7 +86,7 @@ static modify = async (req: Request, res: Response) => {
 
         const { nombre, especialidad, activo } = req.body
 
-        if(!nombre || !especialidad || !activo){
+        if(!nombre || !especialidad || activo === undefined || activo === null){
             this.statusCode = 400
             throw new Error('Verifica los datos del profesional a modificar.')
         }
