@@ -1,5 +1,8 @@
 import { configuracionAgenda, arrayProfesionales, arrayEspecialidades} from "./resources.ts";
-import type { Especialidad, Profesional} from "./resources.ts";
+import { EspecialidadesController} from "./controller/especialidades.controller.ts"
+import { ProfesionalesController } from "./controller/profesionales.controller.ts";
+import { GeneralController } from "./controller/general.controller.ts";
+//import type { Especialidad, Profesional} from "./resources.ts";
 
 import Express, {type Response, type Request} from "express"
 
@@ -10,208 +13,27 @@ const app = Express()
 app.use(Express.json())
 
 //ENDPOINTS 
+
 //hello world 
+app.get("/", GeneralController.helloWorld)
 
-// GET especialidades -- Obtener el listado completo
-app.get('/especialidades', (req: Request, res: Response) => {
-    try {
-        console.clear()
-        console.table(arrayEspecialidades)
-        res.status(200)
-            .json(arrayEspecialidades)
-    } catch (error) {
-        res.status(400)
-        .json({ success: false, message: "Error al intentar enviar los datos de especialidades." });
-    }
-});
+// ESPECIALIDADES
+app.get('/especialidades', EspecialidadesController.getAll)
+app.get('/especialidades/:id', EspecialidadesController.findById)
+app.post('/especialidades', EspecialidadesController.create)
+app.delete('/especialidades/:id', EspecialidadesController.delete)
 
-// GET especialidades id -- Buscar una especialidad específica por especialidadId
-app.get('/especialidades/:id', (req: Request, res: Response) => {
-    try {
-        const especialidadId: number | undefined = Number(req.params.id)
 
-        if(!especialidadId){
-            throw new Error('Error al obtener el codigo de la especialidad.')
-        }
+// PROFESIONALES 
+app.get('/profesionales', ProfesionalesController.getAll)
+app.get('/profesionales/:id', ProfesionalesController.findById)
+app.post('/profesionales', ProfesionalesController.create)
+app.put('/profesionales/:id', ProfesionalesController.modify)
+app.delete('/profesionales/:id', ProfesionalesController.delete)
 
-        const especialidadSolicitada = arrayEspecialidades.find((esp: any)=>esp.especialidadId === especialidadId)
+//404 Not Found
+app.use(GeneralController.notFound)
 
-        if (!especialidadSolicitada) {
-            throw new Error('No se encontro la especialidad indicada')
-        }else{
-            console.clear()
-            console.table(especialidadSolicitada)
-            res.status(200)
-            .json(especialidadSolicitada)
-        }
-
-    } catch (error) {
-        res.status(500).json({ error: 'Error al obtener la especialidad' });
-    }
-});
-
-// POST especialidades -- Crear una nueva especialidad
-app.post('/especialidades', (req: Request, res: Response) => {
-    try {
-        const {nombreEspecialidad, activa} = req.body
-
-        const nuevaEspecialidad: Especialidad = {
-            especialidadId: arrayEspecialidades.length + 1,
-            nombreEspecialidad: nombreEspecialidad,
-            activa: Boolean(activa)
-        }
-        arrayEspecialidades.push(nuevaEspecialidad)
-
-        console.clear()
-        console.table(nuevaEspecialidad)
-        res.status(201)
-            .json(nuevaEspecialidad)
-
-    } catch (error) {
-        res.status(500).json({ error: 'Error al crear la especialidad' });
-    }
-});
-
-// DELETE especialidades id -- Borrado lógico (activa: false)
-app.delete('/especialidades/:id', (req: Request, res: Response) => {
-    try {
-        const especialidadId: number = Number(req.params.id as string)
-
-        const indice: number = arrayEspecialidades.findIndex((esp: any)=> esp.especialidadId === especialidadId)
-
-        if (indice > -1) {
-            arrayEspecialidades[indice].activa = false
-
-            console.clear()
-            console.table(arrayEspecialidades[indice])
-            res.status(204)
-                .json({})
-        } else {
-            res.status(404).json({ error: 'Especialidad no encontrada' });
-        }
-
-    } catch (error) {
-        res.status(500).json({ error: 'Error al desactivar la especialidad' });
-    }
-});
-
-// ENDPOINTS DE PROFESIONALES MÉDICOS
-
-// GET profesionales -- Obtener el listado completo
-app.get('/profesionales', (req: Request, res: Response) => {
-    try {
-        const profesionalesFiltrados: [] = arrayProfesionales.filter((prof: any)=> prof.activo === true)
-
-        res.status(200)
-            .json(profesionalesFiltrados)
-    } catch (error) {
-        res.status(400)
-            .json({status: false, errorMessage: "Verifica el codigo de especialidad enviado." })
-    }
-});
-
-// GET profesionales id -- Buscar un médico específico por medicoId
-app.get('/profesionales/:id', (req: Request, res: Response) => {
-    try {
-        const profesionalId = req.params.id
-
-        const profesionalSeleccionado = arrayProfesionales.find((prof: any)=> prof.profesionalId === Number(profesionalId))
-        
-        if (profesionalSeleccionado){
-            res.status(200)
-                .json(profesionalSeleccionado)
-        }else{
-            throw new Error ('Error al buscar un profesional')
-        }
-
-    } catch (error) {
-        res.status(400)
-            .json({status: false, errorMessage: (error as Error).message || "Error buscando un profesional." })
-    }
-});
-
-// POST profesionales -- Registrar un nuevo médico
-app.post('/profesionales', (req: Request, res: Response) => {
-    try {
-        const { nombre, especialidad, activo} = req.body
-        
-        const nuevoProfesional: Profesional ={
-            profesionalId: arrayProfesionales.length + 1,
-            nombre: nombre,
-            especialidad: especialidad,
-            activo: Boolean(activo)
-        }
-
-        arrayProfesionales.push(nuevoProfesional)
-
-        res.status(201)
-            .json(nuevoProfesional)
-
-    } catch (error) {
-        res.status(400)
-            .json({status: false, errorMessage: (error as Error).message || "Error creando un nuevo profesional." })
-    }
-});
-
-// PUT profesionales id -- Modificación completa de un profesional
-app.put('/profesionales/:id', (req: Request, res: Response) => {
-    try {
-        const profesionalId = req.params.id
-        const { nombre, especialidad, activo } = req.body
-        
-        const indice = arrayProfesionales.findIndex((prof: any)=> prof.profesionalId === Number(profesionalId))
-        if (indice > -1) {
-            arrayProfesionales[indice].nombre = nombre
-            arrayProfesionales[indice].especialidad = especialidad
-            arrayProfesionales[indice].activo = Boolean(activo)
-
-            console.clear()
-            console.table(arrayProfesionales[indice])
-            res.status(200)
-                .json(arrayProfesionales[indice])
-
-        }else{
-            throw new Error('No se encontro el profesional indicado')
-        }
-
-    } catch (error) {
-        res.status(400)
-            .json({status: false, errorMessage: (error as Error).message || "Error al modificar datos de un profesional." })
-    }
-});
-
-// DELETE /profesionales id -- Borrado lógico (activo: false)
-app.delete('/profesionales/:id', (req: Request, res: Response) => {
-    try {
-        const profesionalId = req.params.id
-        const indice = arrayProfesionales.findIndex((prof: any)=> prof.profesionalId === Number(profesionalId))
-
-        if (indice > -1){
-            arrayProfesionales[indice].activo = false
-            res.status(204)
-                .json({})
-        }else {
-            throw new Error('Error al intentar cambiar el estado activo de un profesional.')
-        }
-
-    } catch (error) {
-        res.status(400)
-            .json({status: false, errorMessage: (error as Error).message || "Errror al intentar realizar la operacion."})
-    }
-});
-
-app.use((req: Request, res: Response)=> {
-    try{
-        res.status(404).json({
-            error: 'Endpoint no encontrado',
-            ruta: req.originalUrl,
-            metodo: req.method
-        });
-    } catch (error){
-        res.status(500).json({error: 'Error interno del servidor'});
-    }
-});
-
-app.listen(PORT, () => {
+app.listen(PORT, ()=> {
     console.log(`Servidor escuchando en puerto ${PORT}`)
 });
