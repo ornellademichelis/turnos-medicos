@@ -1,0 +1,20 @@
+[
+    {
+    "codigoPaciente": 1,
+    "nombreCompleto": "Juan Carlos Pérez",
+    "documento": "38123456",
+    "fechaNacimiento": "1994-05-12",
+    "email": "juan.perez@email.com",
+    "telefono": "1198765432",
+    "coberturaSalud": "OSDE 310"
+    },
+    {
+    "codigoPaciente": 2,
+    "nombreCompleto": "María Florencia Gómez",
+    "documento": "40987654",
+    "fechaNacimiento": "1998-11-23",
+    "email": "maria.gomez@email.com",
+    "telefono": "1134567890",
+    "coberturaSalud": "Swiss Medical"
+    }
+]

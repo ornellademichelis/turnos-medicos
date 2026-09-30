@@ -21,3 +21,38 @@ turnos-medicos/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+
+---
+# Pasos para trabajar con este proyecto 
+
+1. Descargar el proyecto desde: 'https://github.com/ornellademichelis/turnos-medicos'
+
+## Inicializar el proyecto 
+
+'''bash
+npm install
+''' 
+
+MAC - Linux
+'''bash
+sudo npm install
+'''
+
+## Ejecutar en DEV
+'''bash
+npm run dev
+'''
+
+## Transpilar el proyecto 
+'''bash 
+npm run build
+'''
+
+## Ejecutar en produccion 
+'''bash
+npm run prod
+'''
+
+
+
+

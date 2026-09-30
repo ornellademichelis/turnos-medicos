@@ -1,0 +1,37 @@
+[
+    {
+    "id": 1,
+    "nombre": "registrado",
+    "descripcion": "El turno fue solicitado y asignado en el sistema."
+    },
+    {
+    "id": 2,
+    "nombre": "validado",
+    "descripcion": "La información y cobertura de salud han sido confirmadas."
+    },
+    {
+    "id": 3,
+    "nombre": "presente",
+    "descripcion": "El paciente se encuentra en la sala de espera."
+    },
+    {
+    "id": 4,
+    "nombre": "en consulta",
+    "descripcion": "El paciente está siendo atendido por el profesional."
+    },
+    {
+    "id": 5,
+    "nombre": "finalizado",
+    "descripcion": "La consulta médica ha concluido."
+    },
+    {
+    "id": 6,
+    "nombre": "cancelado",
+    "descripcion": "El turno fue anulado previamente por el paciente o la institución."
+    },
+    {
+    "id": 7,
+    "nombre": "no presentado",
+    "descripcion": "El paciente no asistió a la cita programada."
+    }
+]

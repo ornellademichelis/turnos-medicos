@@ -1,0 +1,33 @@
+Pacientes
+- codigo de Pacientes
+- nombre completo
+- documento o identificador
+- fecha de nacieimietno
+- email
+- telefono
+- cobertura de salud
+
+Turnos
+- codigo de turnos
+- fecha
+- hora
+- especialidad
+- profesional
+- nombre del paciente 
+- estado del turno
+
+Estado de turnos
+(registrado, validado, presente, en consulta, finalizado, cancelado, no presentado)
+
+ENDPOINTS de Pacientes
+GET /pacientes
+GET /pacientes/codigoPaciente
+POST /pacientes
+PUT /pacientes
+DELETE /pacientes (soft delete)
+
+ENDPOINTS de turnos
+GET /turnos
+GET /turnos/codigoTurno
+POST /turnos
+PUT /turnos
