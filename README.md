@@ -14,7 +14,7 @@ Sistema de gestión y consulta de turnos médicos desarrollado con **Node.js**, 
 ---
 
 ## Estructura del Proyecto
-
+```text
 turnos-medicos/
 ├── src/
 │   ├── data/
